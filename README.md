@@ -2,6 +2,7 @@
 
 This is an application that will help you choose mix of flavors exactly what you need. 
 Text to telegram bot https://t.me/magical_taste_bot
+TODO: add web client
 
 Things you may want to cover:
 
