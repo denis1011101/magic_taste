@@ -42,7 +42,7 @@ const App: React.FC = () => {
             Project Under Development
           </Typography>
           <Typography variant="body1">
-            The page for magical taste creation will be available soon.
+            The page for magic taste creation will be available soon.
           </Typography>
         </Box>
       </Container>
