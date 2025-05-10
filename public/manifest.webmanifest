@@ -1,0 +1,19 @@
+{
+  "name": "Magical Taste",
+  "short_name": "Magical Taste",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#FF6B6B",
+  "background_color": "#FFD166",
+  "display": "standalone"
+}

@@ -5,20 +5,21 @@ const theme = createTheme({
   palette: {
     mode: 'dark',
     background: {
-      default: '#121212',
-      paper: '#1d1d1d',
+      default: '#080808',
+      paper: '#151515',
     },
     text: {
       primary: '#ffffff',
-      secondary: '#b0b0b0',
+      secondary: '#d0d0d0',
     },
   },
   typography: {
     h4: {
-      color: '#ff4081',
+      color: '#ff1a75',
+      fontWeight: 700,
     },
     body1: {
-      color: '#b0b0b0',
+      color: '#f0f0f0',
     },
   },
 });
@@ -28,21 +29,45 @@ const App: React.FC = () => {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Container maxWidth="sm">
-        <Box textAlign="center" mt={5}>
+        <Box 
+          textAlign="center" 
+          mt={8}
+          sx={{
+            padding: 4,
+            borderRadius: 2,
+            boxShadow: '0 0 20px rgba(255, 64, 129, 0.3)',
+          }}
+        >
           <Typography 
             variant="h4" 
             component="h1" 
             gutterBottom
             sx={{
-              background: 'linear-gradient(45deg, #ffff00, #00ff00, #7b1fa2)',
+              background: 'linear-gradient(45deg, #ffff00, #00ff85, #bf00ff)',
+              backgroundSize: '200% 200%',
+              animation: 'gradient 5s ease infinite',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
+              textShadow: '0 0 5px rgba(255,255,255,0.5)',
+              fontSize: '2.5rem',
+              '@keyframes gradient': {
+                '0%': { backgroundPosition: '0% 50%' },
+                '50%': { backgroundPosition: '100% 50%' },
+                '100%': { backgroundPosition: '0% 50%' },
+              },
             }}
           >
             Project Under Development
           </Typography>
-          <Typography variant="body1">
-            The page for magic taste creation will be available soon.
+          <Typography 
+            variant="body1"
+            sx={{
+              fontSize: '1.2rem',
+              color: '#f8f8f8',
+              marginTop: 2,
+            }}
+          >
+            The page for magical taste creation will be available soon.
           </Typography>
         </Box>
       </Container>

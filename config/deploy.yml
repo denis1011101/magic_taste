@@ -2,7 +2,7 @@
 service: magic_taste
 
 # Name of the container image.
-image: your-user/magic_taste
+image: denisdenis9331/magic_taste
 
 # Deploy to these servers.
 servers:
